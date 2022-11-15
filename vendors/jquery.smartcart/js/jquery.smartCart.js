@@ -108,7 +108,7 @@
             this.cart_element.append(cartListElement);
             // Set the cart main element
             this.cart_element.addClass('panel panel-default sc-cart sc-theme-' + this.options.theme);
-            this.cart_element.append('<div class="panel-heading sc-cart-heading">' + this.options.lang.cartTitle + ' <span class="sc-cart-count badge">0</span></div>');
+            this.cart_element.append('<div class="row panel-heading sc-cart-heading pb-3">' + this.options.lang.cartTitle);
             this.cart_element.append('<div class="list-group sc-cart-item-list"></div>');
         },
         /* 
@@ -119,8 +119,8 @@
                 return false;
             }
 
-            var toolbar = $('<div></div>').addClass('panel-footer sc-toolbar');
-            var toolbarButtonPanel = $('<div class="sc-cart-toolbar">');
+            var toolbar = $('<div class="row"></div>').addClass('panel-footer sc-toolbar');
+            var toolbarButtonPanel = $('<div class="sc-cart-toolbar d-flex px-0">');
             var toolbarSummaryPanel = $('<div class="sc-cart-summary">');
 
             // Checkout Button
@@ -153,8 +153,8 @@
 
             // Cart Summary
             if (this.options.toolbarSettings.showCartSummary) {
-                var panelSubTotal = $('<div class="sc-cart-summary-subtotal">');
-                panelSubTotal.append(this.options.lang.subtotal).append(' <span class="sc-cart-subtotal">0</span>');
+                var panelSubTotal = $('<div class="row sc-cart-summary-subtotal pt-3">');
+                panelSubTotal.append(this.options.lang.subtotal).append(' <span class="sc-cart-subtotal text-start px-0 pb-3">0</span>');
                 toolbarSummaryPanel.append(panelSubTotal);
             }
 
@@ -363,7 +363,7 @@
             $('.sc-cart-subtotal', this.element).text(this._getCartSubtotal());
 
             if (this.cart.length === 0) {
-                $('.sc-cart-item-list', this.cart_element).empty().append($('<div class="sc-cart-empty-msg">' + this.options.lang.cartEmpty + '</div>'));
+                $('.sc-cart-item-list', this.cart_element).empty().append($('<div class="row sc-cart-empty-msg text-start">' + this.options.lang.cartEmpty + '</div>'));
                 $(this.options.productContainerSelector).removeClass('sc-added-item');
                 $('.sc-cart-checkout, .sc-cart-clear').addClass('disabled');
 

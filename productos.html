@@ -19,19 +19,19 @@
 
 </head>
 
-<body>
-
-
-    <nav class="navbar navbar-expand-lg p-3 w-100" id="nav-extra"> <!-- comienza la nav bar -->
-        <div class="container">
-            <a class="logo" href="index.html"><img src="img/logo.png" alt=""></a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navegacion"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="bi bi-list fs-1 text-light"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navegacion">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
+<body class="body">
+    <div class="container-fluid p-0">
+        
+        <nav class="navbar navbar-expand-lg p-3 w-100" id="nav-extra"> <!-- comienza la nav bar -->
+            <div class="container">
+                <a class="logo" href="index.html"><img src="img/logo.png" alt=""></a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navegacion"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list fs-1 text-light"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navegacion">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
                     <a class="nav-link  text-light px-3" aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
@@ -56,65 +56,66 @@
 <header>  
     <div class="text-center py-4 fondo-verde">  
         <h1 class="fw-bold py-5 display-3">Preguntas frecuentes</h1>
-     </div>      
- </header>
+    </div>      
+</header>
 
-    <section class="container mt-5">
-        <div class="row">
-            <div class="col-md-9">
-                <h2 class="my-3">Productos</h2>
-
-                <div id="productos" class="row mt-5">
-                    <!-- Acá vienen los productos -->
-                </div>
-
-            </div>
-            <div class="col-md-3">
-                <h2 class="my-3">Mi pedido</h2>
-
-                <div id="smartcart"></div>
-            </div>
-        </div>
-    </section>
-
-
-    <footer class="fondo-verde"><!-- Comienza el footer -->
+<section class="container mt-5">
+    <div class="row">
+        <div class="col-md-9">
+            <h2 class="my-3">Productos</h2>
             
-        <div class="container mt-5 color-2">
-            <div class="row flex-column-reverse flex-md-row pt-2 ">
+            <div id="productos" class="row mt-5 ">
+                <!-- Acá vienen los productos -->
+            </div>
+            
+        </div>
+        <div class="col-md-3 col-10 mx-auto">
+            <h2 class="my-3 py-2 text-center border-bottom border-3">Mi pedido</h2>
+            
+            <div class="col-10 mx-auto" id="smartcart"></div>
+        </div>
+    </div>
+</section>
+
+
+<footer class="fondo-verde"><!-- Comienza el footer -->
+    
+    <div class="container mt-5 color-2">
+        <div class="row flex-column-reverse flex-md-row pt-2 ">
+            
+            <div class="col-md-6 text-light">
+                <p>Copyright ©️ 2022. Made with Twentig.
+                </p>
+            </div>
+            
+            <div class="col-md-6">
                 
-                <div class="col-md-6 text-light">
-                    <p>Copyright ©️ 2022. Made with Twentig.
-                    </p>
-                </div>
-                
-                <div class="col-md-6">
+                <ul class="list-inline d-flex justify-content-md-end">
+                        
+                    <li class="list-inline-item">
+                        <a href="#" alt="facebook-logo" title="facebook"><i class="bi bi-facebook text-light px-1"></i></a>
+                    </li>
                     
-                    <ul class="list-inline d-flex justify-content-md-end">
-                        
-                        <li class="list-inline-item">
-                            <a href="#" alt="facebook-logo" title="facebook"><i class="bi bi-facebook text-light px-1"></i></a>
-                        </li>
-                        
-                        <li class="list-inline-item">
-                            <a href="#" alt="instagram-logo" title="instagram"><i class="bi bi-instagram text-light px-1"></i></a>
-                        </li>
-                        
-                        <li class="list-inline-item">
-                            <a href="#" alt="twitter-logo" title="twitter"><i class="bi bi-twitter text-light px-1"></i></a>
-                        </li>
-                        
-                        <li class="list-inline-item">
-                            <a href="#" alt="youtube-logo" title="youtube"><i class="bi bi-youtube text-light px-1"></i></a>
-                        </li>
-                        
-                    </ul>
-                </div>
-                
+                    <li class="list-inline-item">
+                        <a href="#" alt="instagram-logo" title="instagram"><i class="bi bi-instagram text-light px-1"></i></a>
+                    </li>
+                    
+                    <li class="list-inline-item">
+                        <a href="#" alt="twitter-logo" title="twitter"><i class="bi bi-twitter text-light px-1"></i></a>
+                    </li>
+                    
+                    <li class="list-inline-item">
+                        <a href="#" alt="youtube-logo" title="youtube"><i class="bi bi-youtube text-light px-1"></i></a>
+                    </li>
+                    
+                </ul>
             </div>
             
         </div>
-    </footer><!-- Finaliza el footer -->
+        
+    </div>
+</footer><!-- Finaliza el footer -->
+</div>
 
     <!-- JavaScript, Bootstrap, jQuery -->
     <script src="vendors/jquery/jquery-3.6.1.min.js"></script>

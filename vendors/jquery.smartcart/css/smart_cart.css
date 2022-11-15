@@ -30,7 +30,6 @@
 .sc-cart-empty-msg {
     color: #999;
     margin: 0;
-    padding: 10px;
     text-align: center;
 }
 
@@ -63,16 +62,13 @@
 }
 
 .sc-cart-subtotal {
+    padding: 0;
 }
 
 .sc-cart-toolbar {
     margin-top: 10px;
-    text-align: right;
 }
 
-.sc-cart-toolbar button {
-    margin-left: 5px;
-}
 
 .sc-cart-toolbar button.disabled img {
     opacity: .5;
