@@ -5,9 +5,11 @@ $(document).ready(function () {
     for (let i = 0; i < productos.length; i++) {
 
         $('#productos').append(
-            '<div class="col-6 col-md-4 mx-3 my-4">' +
+            '<div class="col-10 col-md-3 mx-3 my-4">' +
                 '<div class="sc-product-item">' +
-                    '<img class="img-fluid" id="fondo-producto-1" data-name="product_image" src="img/productos/'+ productos[i]['Imagen'] +'" alt="'+ productos[i]['Nombre'] +'">' +
+                '<div class="d-flex justify-content-center">' +
+                    '<img class="img-fluid mb-3" id="fondo-producto-1" data-name="product_image" src="img/productos/'+ productos[i]['Imagen'] +'" alt="'+ productos[i]['Nombre'] +'">' +
+                    '</div>' +
                     '<h4 data-name="product_name">'+ productos[i]['Nombre'] +'</h4>' +
                     '<p data-name="product_desc">'+ productos[i]['Descripcion'] +'</p>' +
                     '<input name="product_price" value="'+ productos[i]['Precio'] +'" type="hidden" >' +
@@ -22,8 +24,8 @@ $(document).ready(function () {
 
     $('#smartcart').smartCart({
 
-        cartItemTemplate: '<div class="d-flex">'+
-            //'<img class="img-fluid" src="{product_image}" />' +
+        cartItemTemplate: '<div>'+
+            '<img class="img-fluid" src="{product_image}" />' +
             '<h3 class="h5 list-group-item-heading">{product_name}</h3>' +
         '</div>',
 

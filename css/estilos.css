@@ -31,7 +31,10 @@ header.fondo {
     background-position: center center;
     background-size: cover;
 }
-
+#card-producto-p{
+display: flex;
+justify-content: center;
+}
 #fondo-producto-1{
 
     background-color: #00724E; 
