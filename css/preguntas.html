@@ -159,11 +159,11 @@
                 </div>
             </div>
             
-            <form action="" class="row needs-validation" novalidate>
+            <form class="row needs-validation" novalidate>
             
                 <div class="col-10 mx-auto my-2">
                     <label for="E-mail" class="form-label fs-5">E-mail (*):</label>
-                    <input type="email" class="form-control mt-1" name="" id="E-mail" placeholder="Completar con e-mail" required>
+                    <input type="email" class="form-control mt-1" name="email" id="E-mail" placeholder="Completar con e-mail" required>
                     <div class="invalid-feedback">
                         No te olvides del apellido
                     </div>
@@ -240,8 +240,9 @@
         $('#myDiv').venomButton({
     phone: '+5491150597815',
     popupMessage: 'Hola, te puedo ayudar en algo?',
-    showPopup: true
-    });
+    showPopup: true,
+    position: 'right'
+});
     </script>
 </body>
 </html>
