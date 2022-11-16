@@ -7,6 +7,9 @@
 #myDiv{
     z-index: 2000;
 }
+#logo{
+    width: 50px;
+}
 h1{
     font-weight: 800 !important;
   }
@@ -34,10 +37,7 @@ header.fondo {
     background-position: center center;
     background-size: cover;
 }
-#card-producto-p{
-display: flex;
-justify-content: center;
-}
+
 #fondo-producto-1{
 
     background-color: #00724E; 
