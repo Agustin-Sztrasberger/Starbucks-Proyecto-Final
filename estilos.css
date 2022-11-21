@@ -4,8 +4,35 @@
     
     
 }
+
+#acordion-agustin-1 .accordion-button:not(.collapsed) {
+    color: #000000;
+    background-color:rgba(0, 114, 78, 0.137);
+}
+
+#acordion-agustin-2 .accordion-button{
+    color: #ffffff;
+    background-color:#00724E;
+    
+}
+#interior-acordion{
+    color: #b9b9b9;
+    background-color:#00724E;
+
+}
+
+
+.accordion-button:focus{
+    box-shadow:none;
+}
+
+
+
 #myDiv{
     z-index: 2000;
+}
+#logo{
+    width: 50px;
 }
 h1{
     font-weight: 800 !important;
@@ -23,6 +50,9 @@ h3{
 p{
     font-weight: 400 !important;
   }
+  li{
+    list-style-type: none;
+  }
 header.fondo {
     padding-top: 10.5rem;
     padding-bottom: 6rem;
@@ -34,10 +64,7 @@ header.fondo {
     background-position: center center;
     background-size: cover;
 }
-#card-producto-p{
-display: flex;
-justify-content: center;
-}
+
 #fondo-producto-1{
 
     background-color: #00724E; 
