@@ -22,9 +22,7 @@
 }
 
 
-.accordion-button:focus{
-    box-shadow:none;
-}
+
 
 
 
@@ -54,8 +52,7 @@ p{
     list-style-type: none;
   }
 header.fondo {
-    padding-top: 10.5rem;
-    padding-bottom: 6rem;
+    height: 100vh;
     text-align: center;
     color: #fff;
     background-image: url("../img/header-bg.jpg");
@@ -63,6 +60,8 @@ header.fondo {
     background-attachment: scroll;
     background-position: center center;
     background-size: cover;
+    display: flex;
+    align-items: center;
 }
 
 #fondo-producto-1{
